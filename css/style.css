@@ -1,0 +1,169 @@
+:root {
+    --cor-de-fundo: #fff;
+    --cor-principal: #eeee3b;
+    --cor-cor: #5596eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-one {
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: baseline;
+    border: 10px solid var(--cor-principal);
+    gap: 20px;
+    padding: 3px;
+}
+
+h2 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.section-one .section-one-div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: baseline;
+    gap: 120px;
+}
+
+.section-one-div .div-infos {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+}
+
+.div-infos .peso {
+    color: blue;
+}
+
+.div-infos .altura {
+    color: orangered;
+}
+
+.div-infos input[type=text] {
+    border: 1px solid #98928e;
+    border-radius: 20px;
+    height: 20px;
+    width: 200px;
+    padding: 2px;
+}
+
+.section-one-div .div-buttons {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+}
+
+.div-buttons .button {
+    cursor: pointer;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.calcular {
+    color: var(--cor-de-fundo);
+    background-color: blue;
+}
+
+.limpar {
+    color: var(--cor-de-fundo);
+    background-color: orangered;
+}
+
+.section-two {
+    margin-top: 25px;
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 10px;
+    border: 0.2px solid #c7c7c7;
+    border-radius: 15px;
+    text-align: center;   
+}
+.section-two .section-two-div {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 80px;
+    margin: 20px;
+}
+.section-two-div h3 {
+    text-align: left;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+.section-two-div .tabela-imc {
+    width: 120%;
+    border: 1px solid #000;
+}
+.tabela-imc tr th {
+    background-color: blue;
+    color: var(--cor-de-fundo);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.section-three {
+    width: 70%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 30px;
+    margin: 50px auto;
+    padding: 10px;
+}
+.section-three h2 {
+    font-size: 30px;
+    font-weight: 700;
+
+}
+.section-three-content {
+    display: flex;
+    gap: 20px;
+}
+.div-section-three {
+    width: 50%;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 20px;
+}
+.div1 {
+    border: 1px solid #e02626;
+}
+.div2 {
+    border: 1px solid #1ad61a;
+}

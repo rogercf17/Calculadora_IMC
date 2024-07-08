@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="./images/imc.png" type="image/png">
+    <title>Calculadora de IMC</title>
+  </head>
+  <body>
+    <h1 class="title">Calculadora de IMC (Para Adultos)</h1>
+    <section class="section-one">
+        <h2>Informações do usuário</h2>
+        <div class="section-one-div">
+            <div class="div-infos">
+                <label for="peso" class="peso">Peso(ex:69.2)</label>
+                <input type="text" id="peso" placeholder="Quilos" />
+                <label for="altura" class="altura">Altura(ex:1.70)</label>
+                <input type="text" id="altura" placeholder="Metros" />
+            </div>
+            <div class="div-buttons">
+                <button class="button calcular" onclick="calcularImc()">Calcular</button>
+                <button class="button limpar" onclick="limparTela()">Limpar</button>
+            </div>
+        </div>
+    </section>
+    <section class="section-two">
+        <div class="section-two-div">
+            <div class="section-two-div1">
+                <h2>Resultado</h2>
+                <h3 id="resultado-peso"></h3>
+                <h3 id="resultado-altura"></h3>
+                <h3 id="resultado-imc"></h3>
+            </div>
+            <div class="section-two-div2">
+                <table class="tabela-imc">
+                    <tr>
+                        <th>IMC</th>
+                        <th>CLASSIFICAÇÃO</th>
+                        <th>OBESIDADE(Grau)</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td>Menor que 18,5</td>
+                        <td>Magreza</td>
+                        <td>0</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td>Entre 18,5 e 24,9</td>
+                        <td>Normal</td>
+                        <td>0</td>
+                    </tr>
+                    <tr id="tr3">
+                        <td>Entre 25,0 e 29,9</td>
+                        <td>Sobrepeso</td>
+                        <td>I</td>
+                    </tr>
+                    <tr id="tr4">
+                        <td>Entre 30,0 e 39,9</td>
+                        <td>Obesidade</td>
+                        <td>II</td>
+                    </tr>
+                    <tr id="tr5">
+                        <td>Maior que 40,0</td>
+                        <td>Obesidade Grave</td>
+                        <td>III</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="section-three">
+        <h2>Informações adicionais</h2>
+        <div class="section-three-content">
+            <div class="div-section-three div1">
+                <h3>O que é IMC:</h3>
+                <p>
+                    O Índice de Massa Corporal (IMC) é uma das principais ferramentas, 
+                    adotada inclusive pela Organização Mundial de Saúde (OMS), 
+                    para calcular o chamado “peso ideal”. Obtido a partir do peso e da altura do indivíduo, 
+                    o IMC também aponta níveis de magreza e obesidade, 
+                    que são usados para nortear o trabalho de profissionais de saúde e de educadores físicos.
+                </p>
+            </div>
+            <div class="div-section-three div2">
+                <h3>Como calcular o IMC:</h3>
+                <p>
+                    Para obter o IMC, basta dividir o seu peso (em quilos) pela altura (em metros) 
+                    elevada ao quadrado (altura x altura).
+                </p>
+            </div>
+        </div> 
+    </section>
+    <script src="script/app.js"></script>
+  </body>
+</html>
